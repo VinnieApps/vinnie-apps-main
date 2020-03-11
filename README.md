@@ -1,6 +1,6 @@
 # Apps
 
-This organization is focused on build a set of open source apps that could replace base services but focusing on freedom and privacy. Users have control of their data and people can learn how all the things work.
+This organization is focused on building a set of open source apps that could replace base services but focusing on freedom and privacy. Users have control of their data and people can learn how all the things work.
 
 # Drivers
 
@@ -16,11 +16,11 @@ Knowledge should also be available in a form that people could monetize from it,
 
 Software changed the world. And it keeps changing it every single day. People should have access to high quality, high performing software that enables and aid them to live a better life. All of that without having to think about privacy and having their data violated by big corporation deals.
 
-Developers (and all builders) shouldn't feel the pressure that they need to make software profitable to help people live a better life. They shouldn't feel like they can't build something to help their communities because it will cost too much money to stand the infrastructure or to keep the project running.
+Developers (and all the builders) shouldn't feel the pressure that they need to make software profitable to help people live a better life. They shouldn't feel like they can't build something to help their communities because it will cost too much money to stand the infrastructure or to keep the project running.
 
 # How should it be?
 
-Just like GitHub created a place where people can collaborate, read and write code in the open, we need a place where people can build and see how real world, global scale, secure applications are built and maintained.
+Just like GitHub created a place where people can collaborate, read and write code in the open, we need a place where people can build and see how real world, global scale, secure applications are built and maintained. And they should have the resources to learn, and help build and maintain them.
 
 # Goals
 
@@ -28,7 +28,7 @@ The following are the goals for this organization and its projects.
 
 ## Education
 
-Build and collect a set of resources that can be used to teach people what software is and the many facets of it. These resources can be used by individuals to train themselves to become software engineers, product managers, tech writers, reliability engineers, etc.
+Build and collect a set of resources that can be used to teach people what software is and the many facets of it. These resources can be used by individuals to train themselves to become software engineers, quality engineers, product managers, tech writers, reliability engineers, etc.
 
 These resources will have many different formats: courses, books, docmentation, data dashboards, code, etc. Each one of them can be used to learn a small piece of the giant, and always growing, realm of building software.
 
