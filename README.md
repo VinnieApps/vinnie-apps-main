@@ -41,3 +41,9 @@ This organization and its projects aim to create software that lives on infrastr
 Because of that it's free!
 
 Will it always be free? I really hope so, but if any project has demand that is too high and becomes too big to be maintained by donations, a very low cost could be charged. Enough to sustain the growth, maintain the infrastructure and possibly pay for the volunteer work. Demand means it is important, it means it is adding value to society. It also means that it needs to continue its journey and the extra money could help.
+
+# Applications
+
+The following is the list of applications supported by this organization:
+
+- [Photos](applications/photos/README.md)

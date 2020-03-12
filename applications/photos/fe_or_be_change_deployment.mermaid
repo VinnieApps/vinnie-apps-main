@@ -1,0 +1,16 @@
+sequenceDiagram
+  participant FE/BE Repository
+  participant Travis
+  participant Infra Repository
+  participant Kubernetes
+  participant Google Cloud
+
+  FE/BE Repository->>FE/BE Repository: Pull Request Created
+  FE/BE Repository->>Travis: PR Build
+  FE/BE Repository->>FE/BE Repository: PR Merged
+  FE/BE Repository->>Travis: Master Build
+  Travis->>Google Cloud: Publish Docker Image
+  Travis->>Infra Repository: Start Deploy Action
+  Infra Repository->>Infra Repository: Run Deploy Action
+  Infra Repository->>FE/BE Repository: Fetch Latest Release Number
+  Infra Repository->>Kubernetes: Deploy Latest Release
