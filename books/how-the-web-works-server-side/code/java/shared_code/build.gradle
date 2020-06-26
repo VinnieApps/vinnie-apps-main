@@ -1,0 +1,5 @@
+dependencies {
+    implementation 'com.google.guava:guava:27.1-jre'
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.assertj:assertj-core:3.11.1'
+}
