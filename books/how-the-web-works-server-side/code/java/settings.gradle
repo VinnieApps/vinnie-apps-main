@@ -1,0 +1,14 @@
+import java.nio.file.Paths
+
+rootProject.name= 'how-the-web-works-server-side'
+
+def rootPath = rootDir.toPath()
+
+new File(rootDir.canonicalPath).eachDirRecurse { dir ->
+    if (dir.canonicalPath.endsWith('src/main/java')) {
+        def path = Paths.get(dir.parentFile.parentFile.parentFile.canonicalPath)
+        def project = rootPath.relativize(path).toString().replace("/", ":")
+        println "Including $project"
+        include project
+    }
+}

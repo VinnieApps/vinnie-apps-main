@@ -1,0 +1,37 @@
+subprojects { p ->
+    apply plugin: 'java'
+    apply plugin: 'application'
+    apply plugin: 'jacoco'
+    apply plugin: 'findbugs'
+
+    repositories {
+        mavenCentral()
+    }
+
+    tasks.withType(FindBugs) {
+        reports {
+            xml.enabled false
+            html.enabled true
+        }
+    }
+
+    def projectPath = projectDir.toPath()
+    def sourcePath = new File(projectDir, 'src/main/java').toPath()
+    def projectMainClassName = ""
+    projectDir.eachFileRecurse { file ->
+        if (file.name.endsWith('Main.java')) {
+            projectMainClassName = sourcePath.relativize(file.toPath())
+                .toString()
+                .replaceAll('/', '.')
+                .replace(".java", "")
+        }
+    }
+
+    p.application {
+        mainClassName = projectMainClassName
+    }
+
+    p.run {
+        standardInput = System.in
+    }
+}
